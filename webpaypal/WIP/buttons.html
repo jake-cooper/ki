@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Buttons</title>
+<style>
+/*-----------------------------------*/
+/* Buttons */
+/*-----------------------------------*/
+.btn, .entry .btn {
+  display: inline-block;
+  text-align: center;
+  font-size: 13px;
+  text-shadow: 0 1px 1px #000;
+}
+
+.button_link, .button_styled {
+  background: #4e8ffa;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  box-shadow: 0 1px 1px #666;
+  -webkit-box-shadow: 0 1px 1px #666;
+  -moz-box-shadow: 0 1px 1px #666;
+  -o-box-shadow: 0 1px 1px #666;
+  -khtml-box-shadow: 0 1px 1px #666;
+  -ms-box-shadow: 0 1px 1px #666;
+  display: inline-block;
+  margin: 5px 0;
+  padding: 0 30px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  text-align: left;
+  text-decoration: none;
+}
+
+.button_link_medium, .button_styled_medium,
+.button_link_large, .button_styled_large,
+.button_link_small, .button_styled_small {
+  background: #4e8ffa;
+  color: #fff;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  box-shadow: 0 1px 1px #666;
+  -webkit-box-shadow: 0 1px 1px #666;
+  -moz-box-shadow: 0 1px 1px #666;
+  -o-box-shadow: 0 1px 1px #666;
+  -khtml-box-shadow: 0 1px 1px #666;
+  -ms-box-shadow: 0 1px 1px #666;
+  display: inline-block;
+  text-align: left;
+  text-decoration: none;
+  text-shadow: none !important;
+}
+
+.button_link_small, .button_styled_small {
+  margin: 5px 0;
+  padding: 5px 15px;
+  font: 11px 'Open Sans' !important;
+}
+
+.button_link_medium, .button_styled_medium {
+  padding: 9px 15px;
+  font: 13px 'Open Sans';
+  font-weight: 600;
+}
+
+.button_link_large, .button_styled_large {
+  padding: 9px 20px;
+  font: 15px 'Open Sans';
+  font-weight: 600;
+}
+
+.big-text {
+  text-transform: uppercase;
+  font-family: 'Open Sans';
+  font-weight: 700 !important;
+}
+
+.button_link span {
+  display: block;
+  height: 38px;
+  line-height: 38px;
+  color: #fff;
+  cursor: pointer;
+  text-align: center;
+  min-width: 70px;
+}
+
+.button_styled {
+  height: 38px;
+  line-height: 38px;
+  min-width: 70px;
+  text-align: center;
+}
+
+/* Color Styled Buttons */
+.btn_red {
+  background-color: #fd4124;
+  background-image: -linear-gradient(bottom, #dd1700, #ff1a00);
+  background-image: -webkit-linear-gradient(bottom, #dd1700, #ff1a00);
+  background-image: -moz-linear-gradient(bottom, #dd1700, #ff1a00);
+  background-image: -o-linear-gradient(bottom, #dd1700, #ff1a00);
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.15) !important;
+}
+
+.btn_blue {
+  background-color: #03b8ca;
+  background-image: -linear-gradient(bottom, #009ec3, #00b7ea);
+  background-image: -webkit-linear-gradient(bottom, #009ec3, #00b7ea);
+  background-image: -moz-linear-gradient(bottom, #009ec3, #00b7ea);
+  background-image: -o-linear-gradient(bottom, #009ec3, #00b7ea);
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.15) !important;
+}
+
+.btn_turquoise {
+  background-color: #3feddb;
+  background-image: -linear-gradient(bottom, #26d3a8, #68ffe1);
+  background-image: -webkit-linear-gradient(bottom, #26d3a8, #68ffe1);
+  background-image: -moz-linear-gradient(bottom, #26d3a8, #68ffe1);
+  background-image: -o-linear-gradient(bottom, #26d3a8, #68ffe1);
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.15) !important;
+}
+
+.btn_yellow {
+  background-color: #e7a300;
+  background-image: -linear-gradient(bottom, #efb834, #f8d202);
+  background-image: -webkit-linear-gradient(bottom, #efb834, #f8d202);
+  background-image: -moz-linear-gradient(bottom, #efb834, #f8d202);
+  background-image: -o-linear-gradient(bottom, #efb834, #f8d202);
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.15) !important;
+}
+
+.btn_yellow span {
+  color: #fff;
+}
+
+.btn_orange {
+  color: #fff !important;
+  background-color: #ffbe24;
+  background-image: -linear-gradient(bottom, #fb9700, #ffbe24);
+  background-image: -webkit-linear-gradient(bottom, #fb9700, #ffbe24);
+  background-image: -moz-linear-gradient(bottom, #fb9700, #ffbe24);
+  background-image: -o-linear-gradient(bottom, #fb9700, #ffbe24);
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.15) !important;
+}
+
+.btn_pink {
+  background-color: #F25D3C;
+  background-image: -webkit-linear-gradient(bottom, #f25d3c, #ff7658);
+  background-image: -linear-gradient(bottom, #f25d3c, #ff7658);
+  background-image: -moz-linear-gradient(bottom, #f25d3c, #ff7658);
+  background-image: -o-linear-gradient(bottom, #f25d3c, #ff7658);
+  color: #fff !important;
+}
+
+.btn_purple {
+  background-color: #982e86;
+  background-image: -linear-gradient(bottom, #982e86, #c05bb1);
+  background-image: -webkit-linear-gradient(bottom, #982e86, #c05bb1);
+  background-image: -moz-linear-gradient(bottom, #982e86, #c05bb1);
+  background-image: -o-linear-gradient(bottom, #982e86, #c05bb1);
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.15) !important;
+}
+
+.btn_green {
+  background-color: #65c122;
+  background-image: -linear-gradient(bottom, #98d049, #cbd926);
+  background-image: -webkit-linear-gradient(bottom, #98d049, #cbd926);
+  background-image: -moz-linear-gradient(bottom, #98d049, #cbd926);
+  background-image: -o-linear-gradient(bottom, #98d049, #cbd926);
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.15) !important;
+}
+
+.btn_black {
+  background-color: #464646;
+  background-image: -webkit-linear-gradient(bottom, #333333, #464646);
+  background-image: -linear-gradient(bottom, #333333, #464646);
+  background-image: -moz-linear-gradient(bottom, #333333, #464646);
+  background-image: -o-gradient(bottom, #333333, #464646);
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.15) !important;
+}
+
+.btn_gray {
+  background-color: #f6f7f9;
+  background-image: -webkit-linear-gradient(bottom, #eaebee, #f6f7f9);
+  background-image: -linear-gradient(bottom, #eaebee, #f6f7f9);
+  background-image: -moz-linear-gradient(bottom, #eaebee, #f6f7f9);
+  background-image: -o-gradient(bottom, #eaebee, #f6f7f9);
+  color: #666 !important;
+}
+
+.btn_gray span {
+  color: #666 !important;
+}
+
+</style>
+</head>
+<body>
+<div>
+<h3>Predefined Buttons</h3>
+<p>
+<a href="#" class=" button_link btn_blue" target="_self" hidefocus="true" style="outline: none; opacity: 1;"><span>Blue</span></a>&nbsp;&nbsp;<a href="#" class=" button_link btn_green" target="_self" hidefocus="true" style="outline: none;"><span>Green</span></a>&nbsp;&nbsp;<a href="#" class=" button_link btn_yellow" target="_self" hidefocus="true" style="outline: none; opacity: 1;"><span>Yellow</span></a>&nbsp;&nbsp;<a href="#" class=" button_link btn_red" target="_self" hidefocus="true" style="outline: none; opacity: 1;"><span>Red</span></a>&nbsp;&nbsp;<a href="#" class=" button_link btn_orange" target="_self" hidefocus="true" style="outline: none; opacity: 1;"><span>Orange</span></a>&nbsp;&nbsp;<a href="#" class=" button_link btn_pink" target="_self" hidefocus="true" style="outline: none; opacity: 1;"><span>Pink</span></a>&nbsp;&nbsp;<a href="#" class=" button_link btn_turquoise" target="_self" hidefocus="true" style="outline: none; opacity: 1;"><span>Turquoise</span></a>&nbsp;&nbsp;<a href="#" class=" button_link btn_purple" target="_self" hidefocus="true" style="outline: none; opacity: 1;"><span>Purple</span></a>&nbsp;&nbsp;<a href="#" class=" button_link btn_gray" target="_self" hidefocus="true" style="outline: none;"><span>Gray</span></a>&nbsp;&nbsp;<a href="#" class=" button_link btn_black" target="_self" hidefocus="true" style="outline: none; opacity: 1;"><span>Black</span></a>&nbsp;&nbsp;</p>
+</div>
+</body>
+</html>
